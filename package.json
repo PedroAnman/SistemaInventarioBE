@@ -1,0 +1,64 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Ecommerce",
+  "main": "build/server.js",
+  "scripts": {
+    "start": "node build/server.js",
+    "build": "tsc -p .",
+    "dev": "nodemon \"src/server.ts\" --exec \"ts-node\" \"src/server.ts\" -e ts,graphql,json"
+  },
+  "keywords": [
+    "graphql",
+    "meang",
+    "api-graphql"
+  ],
+  "author": "Pedro Angeles",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "logs/*"
+    ]
+  },
+  "dependencies": {
+    "@graphql-tools/load-files": "^6.6.1",
+    "@graphql-tools/utils": "^8.11.0",
+    "@wiicamp/graphql-merge-resolvers": "^2.1.2",
+    "apollo-server-express": "^3.10.2",
+    "chalk": "^5.0.1",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "glob-parent": "^6.0.1",
+    "graphql": "^16.6.0",
+    "graphql-import-node": "^0.0.5",
+    "graphql-playground-middleware-express": "^1.7.23",
+    "graphql-tools": "^8.3.5",
+    "log4js": "^6.6.1",
+    "minimal-js": "^0.2.1",
+    "mongodb": "^4.9.1",
+    "ncp": "^2.0.0",
+    "semver": "^7.5.3",
+    "typescript": "^4.8.2"
+  },
+  "devDependencies": {
+    "@types/compression": "^1.7.2",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/graphql": "^14.5.0",
+    "@types/node": "^18.7.16",
+    "nodemon": "^1.14.9",
+    "ts-node": "^10.9.1",
+    "typescript-tslint-plugin": "^1.0.2"
+  },
+  "overrides": {
+    "glob-parent": "$glob-parent",
+    "got": "^12.1.0",
+    "semver": "^7.5.3"
+  }
+}

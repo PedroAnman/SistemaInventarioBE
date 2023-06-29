@@ -1,0 +1,8 @@
+"Información detallada de cada producto"
+type Product {
+    codigoBarras: ID!,
+    descripcion: String,
+    categoria: String,
+    cantidad: String,
+    precio: String,
+}

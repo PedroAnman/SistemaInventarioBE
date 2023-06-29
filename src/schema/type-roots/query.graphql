@@ -1,0 +1,10 @@
+"Definicion de los tipos de raiz"
+type Query{
+    "Buscador de productos"
+    searchproducts(text: String!, itemsPage: Int = 20): ResultProducts
+    "Lista de productos"
+    products(codigoBarras: String, descripcion: String, categoria: String, page: Int = 1, itemsPage: Int = 20): ResultProducts
+    "Obtener un producto por medio del ID"
+    product(codigoBarras: String!): ResultProducts
+    
+}

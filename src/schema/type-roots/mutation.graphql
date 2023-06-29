@@ -1,0 +1,7 @@
+"Definicion de los tipos de raiz"
+type Mutation{
+    "Registrar producto"
+    addProducto(product: ProductInput!): ResultBasic
+    "Actualizar producto"
+    modifyProducto(product: ProductInput!): ResultBasic
+}

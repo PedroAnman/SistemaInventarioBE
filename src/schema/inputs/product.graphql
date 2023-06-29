@@ -1,0 +1,7 @@
+input ProductInput{
+    codigoBarras: ID!
+    descripcion: String
+    categoria: String
+    cantidad: String
+    precio: String
+}
